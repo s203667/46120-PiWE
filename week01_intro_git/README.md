@@ -58,9 +58,9 @@ This should be done together with your team. Your team can meet physically, virt
 1. Pull the branches of other teammates locally, or view the branches online. (Related links in "Videos and tutorials".)  
 2. Present your code to each other and compare how you solved the preparatory exercises.  
 3. Decide which branch you want to merge into main.  
-4. On GitHub, one person creates a pull request (PR) to merge the chosen branch into `main`.  
+4. On GitHub, one person creates a pull request (PR) to merge the chosen branch into `main`.
 5. Another person reviews the PR (links in "Videos and tutorials") and, if it looks okay, accepts it.  
-6. All group members update their local copies of `main` branch.  
+6. All group members update their local copies of `main` branch.
     * Hint: the steps are to switch into the main branch, then pull.  
 8. Create a text file called `GitAnswers.md` in the top level of the repo, add your answers to the
    the git questions below, and push it.  
