@@ -24,7 +24,7 @@ Read through this page and make a plan of attack
 for who does which parts. Branches with PRs? Team deadlines?
 
 ### PART I: Understand the problem formulation
-1. Read the [Definition](hhttps://python-at-risoe.pages.windenergy.dtu.dk/codecamp/turbie/1-definition.html)
+1. Read the [Definition](https://python-at-risoe.pages.windenergy.dtu.dk/codecamp/turbie/1-definition.html)
    page on the CodeCamp website.
 1. Read the [Homogeneous response](https://python-at-risoe.pages.windenergy.dtu.dk/codecamp/turbie/5-homogeneous-response.html)
    page on the CodeCamp website, ignore the Excercise part for now.
@@ -53,7 +53,7 @@ for who does which parts. Branches with PRs? Team deadlines?
 1. Add code to `code_week4.py` that calls `calculate_ct()` for the wind
    speeds stored in `wind_12_ms_TI_0.1.txt`. (Hint: you might need to call
    `load_wind()` before you call `calculate_ct()`.)  
-1. Re-run this week's tests. Does anything pass now?  
+1. Re-run this week's tests. Does anything pass now?
 
 
 ### PART III: Write a dydt function for homogenous and forced responses
@@ -144,7 +144,7 @@ file in a new subfolder called `resp/` with a filename `test_resp.txt`.
     "force" option for `git add`.  
 1. Compare the file you just simulated to `resp_12_ms_TI_0.1.txt`. Do they
    match?  
-1. Re-run this week's tests. Do any more tests pass?  
+1. Re-run this week's tests. Do any more tests pass?
 
 ### PART VI: (Extra credit) Plan of attack for codecamp submission
 

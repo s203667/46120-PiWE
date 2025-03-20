@@ -4,12 +4,16 @@ Use scipy.optimize.fsolve to find the closest root of a function.
 """
 import matplotlib.pyplot as plt
 import numpy as np
+import scipy as sp
+import scipy.optimize as spo
+from scipy.optimize import fsolve
 # TODO! Add an import statement so you can use fsolve
 
 
 def eval_quadratic(x, a, b, c):
     """Evaluate f(x) = a*x^2 + b*x + c."""
-    return np.zeros_like(x)  # TODO! Update this so it returns parabola
+
+    return a * x**2 + b * x + c
 
 
 def plot_quadratic(a, b, c, xplot=np.linspace(-5, 5, 301)):
@@ -27,13 +31,18 @@ def plot_quadratic(a, b, c, xplot=np.linspace(-5, 5, 301)):
 if __name__ == '__main__':
     # define constants for parabola coefficients and initial guess
     A, B, C = 1, 1, -12
+    X0 = [-3, 4]
     # TODO! Define a constant "X0" with the initial guess
 
     # plot the parabola and initial guess as an x
+
     fig, ax = plot_quadratic(A, B, C)
+    ax.scatter(x=X0, y=[0,0], c='black', marker='x') # plot initial guess as black "x"
     # TODO! Add the initial guess to the plot as a black "x"
 
     # call fsolve to find the closest root, add to plot as red circle
+    result = sp.optimize.fsolve(eval_quadratic, X0, args=(A, B, C))
+    ax.scatter(x=result, y=[0,0], edgecolor='r', facecolor='none', marker='o')
     # TODO! Call fsolve using the necessary arguments and keyword arguments
     # TODO! Add the found root to the plot as a red circle with a see-through center
 
